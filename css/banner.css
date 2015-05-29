@@ -1,0 +1,96 @@
+#outerWrapper {
+	width: 900px;
+	margin: 30px auto;
+	position: relative;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	perspective: 1000px;
+	overflow: hidden;
+}
+#logo {
+	position: absolute;
+	top: 13px;
+	left: 45px;
+	-webkit-transition: all 3s ease;
+	-moz-transition: all 3s ease;
+	-o-transition: all 3s ease;
+	transition: all 3s ease;
+	-webkit-transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	-o-transition-delay: 1s;
+	transition-delay: 1s;
+}
+
+#colorBar {
+	position: absolute;
+	left: 1292px;
+	top: 34px;	
+	-webkit-transition: all .5s ease-in-out;	
+	transition: all .5s ease-in-out;
+}
+#colorBar.colorBar-anim {
+	left: 292px;
+	top: 34px;	
+}
+#bannerText {
+	position: absolute;
+	left: 386px;
+	top: 178px;	
+}
+#designCircle {
+	position: absolute;
+	left: 1334px;
+	top: 10px;	
+}
+#webCircle {
+	position: absolute;
+	left: 1518px;
+	top: 10px;	
+}
+#printCircle {
+	position: absolute;
+	left: 1707px;
+	top: 10px;	
+}
+.circle {
+    opacity: 0;
+    -webkit-transition-property: left,opacity,-webkit-transform;
+    -webkit-transition-duration: 3s,4s,3s;
+    -webkit-transition-timing-function: ease,ease,ease-out;
+    -webkit-transition-delay: 0s,.5s,0s;    
+    -moz-transition-property: left,opacity,-moz-transform;
+    -moz-transition-duration: 3s,4s,3s;
+    -moz-transition-timing-function: ease,ease,ease-out;
+    -moz-transition-delay: 0s,.5s,0s;
+    -o-transition-property: left,opacity,-o-transform;
+    -o-transition-duration: 3s,4s,3s;
+    -o-transition-timing-function: ease,ease,ease-out;
+    -o-transition-delay: 0s,.5s,0s;
+    transition-property: left,opacity,transform;
+    transition-duration: 3s,4s,3s;
+    transition-timing-function: ease,ease,ease-out;
+    transition-delay: 0s,.5s,0s;
+}
+.animated {
+    -webkit-transform: rotateY(-720deg);    
+    -moz-transform: rotateY(-720deg);    
+    -o-transform: rotateY(-720deg);    
+	transform: rotateY(-720deg);	
+}
+#designCircle.anim-circle {
+	left:334px;	
+}
+#webCircle.anim-circle {
+	left: 518px;
+}
+#printCircle.anim-circle {
+	left: 707px;
+}
+.anim-circle {
+    -webkit-transform: rotate(-1080deg);
+    -moz-transform: rotate(-1080deg);
+    -o-transform: rotate(-1080deg);
+    transform: rotate(-1080deg);
+    opacity: 1;
+}

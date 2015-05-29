@@ -1,0 +1,84 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Moray Creative Test Banner</title>
+		<meta name="description" content="Moray Creative Carousel">
+		<link rel="icon" href="img/favicon.png">
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/carousel.css">
+		<!--Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser-->
+		<script type="text/javascript" src="js/carousel/modernizr.2.5.3.min.js"></script>
+		<!--utils.js by David DeSandro-->
+		<script type="text/javascript" src="js/carousel/utils.js"></script>
+		<script type="text/javascript" src="js/carousel/gallery.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            var inc=1;
+            $(function () {
+                    $('#next').click(
+                        function () {
+                            var currentFig = "#fig" + inc;
+                            if (inc == 10) {
+                                nextFig = "#fig1";
+                            } else {
+                                nextFig = "#fig" + (inc + 1);
+                            }
+                            $(nextFig).addClass('showFig');
+                            $(currentFig).removeClass('showFig');   
+                            inc++;
+                            if (inc == 11) { inc = 1; } 
+                        }
+                    );  
+                    $('#previous').click(
+                        function () {
+                            var currentFig = "#fig" + inc;
+                            if (inc == 1) {
+                                prevFig = "#fig10";
+                            } else {
+                                prevFig = "#fig" + (inc - 1);
+                            }
+                            $(prevFig).addClass('showFig');
+                            $(currentFig).removeClass('showFig');   
+                            inc--;
+                            if (inc == 0) { inc = 10; } 
+                    }
+                    );  
+            });
+        </script>
+	</head>
+
+		<body class="loaded">
+			<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        	<![endif]-->
+  <div id="gallery">
+    <section class="container">
+      <div id="carousel">
+        <figure id="fig1" class="showFig"><img src="img/carousel/slide1.jpg" width="274" height="174"></figure>
+        <figure id="fig2"><img src="img/carousel/slide2.jpg" width="274" height="174"></figure>
+        <figure id="fig3"><img src="img/carousel/slide3.jpg" width="274" height="174"></figure>
+        <figure id="fig4"><img src="img/carousel/slide4.jpg" width="274" height="174"></figure>
+        <figure id="fig5"><img src="img/carousel/slide5.jpg" width="274" height="174"></figure>
+        <figure id="fig6"><img src="img/carousel/slide6.jpg" width="274" height="174"></figure>
+        <figure id="fig7"><img src="img/carousel/slide7.jpg" width="274" height="174"></figure>
+        <figure id="fig8"><img src="img/carousel/slide8.jpg" width="274" height="174"></figure>
+        <figure id="fig9"><img src="img/carousel/slide9.jpg" width="274" height="174"></figure>
+        <figure id="fig10"><img src="img/carousel/slide10.jpg" width="274" height="174"></figure>
+      </div>
+    </section>
+    <section id="options">
+       <p id="toggle"><button id="toggle-axis">Toggle Axis</button></p> 
+        <p id="navigation">
+        <input type="hidden" id="panel-count" value="10"/>
+        <button id="previous" data-increment="-1">Previous</button>
+        <button id="next" data-increment="1">Next</button>
+        </p>
+    </section>
+  </div>
+		</body>
+</html>
