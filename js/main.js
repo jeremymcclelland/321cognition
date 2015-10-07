@@ -16,6 +16,8 @@ newHeading.appendChild(h1Text);
 newParagraph.appendChild(paraText);
 
 // and we still need to attach them to the document!
+
+//this is just filler for future javascript
 document.getElementById("logo").appendChild(newHeading);
 document.getElementById("trivia").appendChild(newParagraph);
 
