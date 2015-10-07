@@ -1,5 +1,5 @@
 <?php 
-$siteroot = '/Responsive_PHP'; //sets variable for siteroot for testing environment
+$siteroot = '/321cognition'; //sets variable for siteroot for testing environment
 //set siteroot to empty string when launching site
 //date_default_timezone_set('America/New_York');
 ?>  
@@ -11,7 +11,7 @@ $siteroot = '/Responsive_PHP'; //sets variable for siteroot for testing environm
             <ul>
                 <li><a href="<?php echo $siteroot; ?>/index.php">Home</a></li>
                 <li><a href="<?php echo $siteroot; ?>/page2.php">Page 2</a></li>
-                <li><a href="#">Page 3</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
