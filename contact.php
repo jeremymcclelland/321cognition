@@ -13,10 +13,10 @@ if (isset($_POST['send'])) {
     $headers .= "Content-type: text/plain; charset=utf-8";
     $authenticate = null;//'-fjeremy@moraycreative.com';
     require './includes/mail_process.php';
-    //if ($mailSent) {
-     //   header('Location: thanks.php');
-      //  exit;
-    //}
+    if ($mailSent) {
+        header('Location: thanks.php');
+        exit;
+    }
 }
 ?>
         <div class="main-container">
