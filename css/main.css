@@ -1,6 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700);
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 /*adding less styles to boilerplate css*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700);
 .boxShadow {
   -webkit-box-shadow: 0 5px 10px #aaa;
   -moz-box-shadow: 0 5px 10px #aaa;
@@ -578,7 +578,7 @@ label {
   display: block;
 }
 input[type=text] {
-  width: 250px;
+  width: 100%;
 }
 textarea {
   width: 100%;
@@ -606,3 +606,6 @@ fieldset {
 legend {
   font-weight: bold;
 }
+/* ==========================================================================
+   END Contact Form
+   ========================================================================== */
