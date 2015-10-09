@@ -38,7 +38,7 @@ $siteroot = '/321cognition'; //sets variable for siteroot for testing environmen
             <ul>
                 <li><a href="<?php echo $siteroot; ?>/index.php">Home</a></li>
                 <li><a href="<?php echo $siteroot; ?>/page2.php">Page 2</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="<?php echo $siteroot; ?>/contact.php">Contact</a></li>
             </ul>
         </nav>
     </header>
