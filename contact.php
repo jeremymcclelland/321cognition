@@ -1,3 +1,9 @@
+<?php 
+function redirect_to($new_location) {
+    header("Location: " . $new_location);
+    exit;
+}
+?>
 <?php require 'includes/toppage.php'; //include for header ?>
 <?php
 //php for self processing form
@@ -14,8 +20,7 @@ if (isset($_POST['send'])) {
     $authenticate = null;//'-fjeremy@moraycreative.com';
     require './includes/mail_process.php';
     if ($mailSent) {
-        header('Location: thanks.php');
-        exit;
+        redirect_to('thanks.php');
     }
 }
 ?>
