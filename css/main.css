@@ -124,6 +124,30 @@ nav a:hover {
 nav a:visited {
   text-decoration: none;
 }
+/*mobile dropdown menu working*/
+nav ul ul {
+  position: relative;
+  z-index: 99;
+  display: none;
+  text-align: center;
+  width: 100%;
+  margin-top: -10px;
+}
+nav ul ul li {
+  width: 100%;
+  float: left;
+  margin-bottom: 0;
+}
+nav ul ul a {
+  margin-bottom: 0;
+  background-color: #003a70;
+}
+nav ul ul li:last-child {
+  margin-bottom: 25px;
+}
+nav li:hover ul {
+  display: block;
+}
 /* ==============
     MOBILE: Main
    ============== */
@@ -409,8 +433,41 @@ div#bottomFooter div.rightCol {
   .oldie nav a {
     margin: 0 0.7%;
   }
+  /*medium dropdown menu working*/
+  nav ul ul {
+    position: absolute;
+    z-index: 99;
+    display: none;
+    width: 100%;
+    margin-top: -10px;
+  }
+  nav ul ul li {
+    width: 90%;
+    float: left;
+  }
+  nav li:hover ul {
+    display: block;
+    margin-top: 85px;
+  }
 }
 @media only screen and (min-width: 768px) {
+  /*max width dropdown menu working*/
+  nav ul ul {
+    position: absolute;
+    z-index: 99;
+    display: none;
+    width: 34.5%;
+    margin-top: -10px;
+  }
+  nav ul ul li {
+    width: 100%;
+    float: left;
+  }
+  nav li:hover ul {
+    display: block;
+    margin-top: 85px;
+  }
+  /*max width dropdown menu working*/
   /* ====================
     WIDE: CSS3 Effects
    ==================== */
@@ -469,6 +526,22 @@ div#bottomFooter div.rightCol {
   }
 }
 @media only screen and (min-width: 1140px) {
+  /*max width dropdown menu working*/
+  nav ul ul {
+    position: absolute;
+    z-index: 99;
+    display: none;
+    max-width: 393px;
+    margin-top: -10px;
+  }
+  nav ul ul li {
+    width: 100%;
+    float: left;
+  }
+  nav li:hover ul {
+    display: block;
+    margin-top: 85px;
+  }
   /* ===============
     Maximal Width
    =============== */
@@ -608,4 +681,7 @@ legend {
 }
 /* ==========================================================================
    END Contact Form
+   ========================================================================== */
+/* ==========================================================================
+   Dropdown menu test
    ========================================================================== */
